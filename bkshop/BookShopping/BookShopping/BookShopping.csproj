@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1178D472-36E0-4A7A-9BA3-4A2BF5554E7B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookShopping</RootNamespace>
+    <AssemblyName>BookShopping</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\AdminCustomerDetails.aspx" />
+    <Content Include="Admin\AdminCustomerList.aspx" />
+    <Content Include="Admin\AdminCustomerOrderDetails.aspx" />
+    <Content Include="Admin\AdminCustomerOrderList.aspx" />
+    <Content Include="Admin\AdminCustomerReview.aspx" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\AdminProcuctDetails.aspx" />
+    <Content Include="Admin\AdminProductList.aspx" />
+    <Content Include="AdvanceSearch.aspx" />
+    <Content Include="App_Data\booksdatabase.mdf" />
+    <Content Include="App_Data\booksdatabase_log.ldf">
+      <DependentUpon>booksdatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="ConfirmOrder.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="FeedBack.aspx" />
+    <Content Include="Imageresources\Banner\arrows.png" />
+    <Content Include="Imageresources\Banner\background.png" />
+    <Content Include="Imageresources\Banner\banner1.jpg" />
+    <Content Include="Imageresources\Banner\banner2.jpg" />
+    <Content Include="Imageresources\Banner\banner3.jpg" />
+    <Content Include="Imageresources\Banner\banner4.jpg" />
+    <Content Include="Imageresources\Banner\banner5.jpg" />
+    <Content Include="Imageresources\Banner\bullets.png" />
+    <Content Include="Imageresources\Banner\nemo.jpg" />
+    <Content Include="Imageresources\Banner\slider.png" />
+    <Content Include="Imageresources\Banner\toystory.jpg" />
+    <Content Include="Imageresources\Banner\up.jpg" />
+    <Content Include="Imageresources\Banner\walle.jpg" />
+    <Content Include="Imageresources\Childrenbooks\365BedTimeStories.PNG" />
+    <Content Include="Imageresources\Childrenbooks\AmeliaBedelia.PNG" />
+    <Content Include="Imageresources\Childrenbooks\DollBones.PNG" />
+    <Content Include="Imageresources\Childrenbooks\MoonMountain.PNG" />
+    <Content Include="Imageresources\Childrenbooks\RabbitHill.PNG" />
+    <Content Include="Imageresources\Childrenbooks\Shiloh.PNG" />
+    <Content Include="Imageresources\Childrenbooks\StoriesShortAndSweet.PNG" />
+    <Content Include="Imageresources\Childrenbooks\SwamiAndFriends.PNG" />
+    <Content Include="Imageresources\Childrenbooks\TheKindomOfFantasy.PNG" />
+    <Content Include="Imageresources\Childrenbooks\TheWitchOfBlackbirdPond.PNG" />
+    <Content Include="Imageresources\Childrenbooks\TigersForDinner.PNG" />
+    <Content Include="Imageresources\Comics_Graphics\Advengers.PNG" />
+    <Content Include="Imageresources\Comics_Graphics\Aghori.PNG" />
+    <Content Include="Imageresources\Comics_Graphics\Devi.PNG" />
+    <Content Include="Imageresources\Comics_Graphics\SpiderMan%28volume 44%29.PNG" />
+    <Content Include="Imageresources\Comics_Graphics\Ultimate Spider-Man.PNG" />
+    <Content Include="Imageresources\Comics_Graphics\X-Man.PNG" />
+    <Content Include="Imageresources\Computer_Internet\BuildingAndroidApps.PNG" />
+    <Content Include="Imageresources\Computer_Internet\Compilers.PNG" />
+    <Content Include="Imageresources\Computer_Internet\ComputerInstalationAndServicing.PNG" />
+    <Content Include="Imageresources\Computer_Internet\CrackingTheITInterview.PNG" />
+    <Content Include="Imageresources\Computer_Internet\DesignPatterns.PNG" />
+    <Content Include="Imageresources\Computer_Internet\DigitalImageProcessing.PNG" />
+    <Content Include="Imageresources\Computer_Internet\Google.PNG" />
+    <Content Include="Imageresources\Computer_Internet\HackingAndCracking.PNG" />
+    <Content Include="Imageresources\Computer_Internet\HarwareAndNetworkingCourseKit.PNG" />
+    <Content Include="Imageresources\Computer_Internet\LetUsCSolutions.PNG" />
+    <Content Include="Imageresources\Computer_Internet\SBISpcialistComputerSystem.PNG" />
+    <Content Include="Imageresources\Computer_Internet\Webechnilogies.PNG" />
+    <Content Include="Imageresources\Cookerypics\101Chinese.PNG" />
+    <Content Include="Imageresources\Cookerypics\101MixAndMatch.PNG" />
+    <Content Include="Imageresources\Cookerypics\101WaystoPrepareKababs.PNG" />
+    <Content Include="Imageresources\Cookerypics\Bread.PNG" />
+    <Content Include="Imageresources\Cookerypics\CookingMadeEasy.PNG" />
+    <Content Include="Imageresources\Cookerypics\CornCuisiney.jpg" />
+    <Content Include="Imageresources\Cookerypics\Curries.PNG" />
+    <Content Include="Imageresources\Cookerypics\DishesandDesserts.PNG" />
+    <Content Include="Imageresources\Cookerypics\FrDiabettics.PNG" />
+    <Content Include="Imageresources\Cookerypics\MicrowaveCooking.PNG" />
+    <Content Include="Imageresources\Cookerypics\ModernCookery.PNG" />
+    <Content Include="Imageresources\Cookerypics\NutritiousMashrooms.PNG" />
+    <Content Include="Imageresources\Cookerypics\Over100FatFree.PNG" />
+    <Content Include="Imageresources\Cookerypics\Paneer.PNG" />
+    <Content Include="Imageresources\Cookerypics\RiceBonanza.PNG" />
+    <Content Include="Imageresources\Cookerypics\SavourySnacks.PNG" />
+    <Content Include="Imageresources\Cookerypics\SoupsAndSalads.PNG" />
+    <Content Include="Imageresources\Educational\AdvancedGenerakKnowledgecurrentAffairsLevel2.PNG" />
+    <Content Include="Imageresources\Educational\EnglishGrammarAndComposition.PNG" />
+    <Content Include="Imageresources\Educational\GeneralKnowledge.PNG" />
+    <Content Include="Imageresources\Educational\India2014.PNG" />
+    <Content Include="Imageresources\Educational\IndianPolity.PNG" />
+    <Content Include="Imageresources\Educational\LogicalReasoningCAT.PNG" />
+    <Content Include="Imageresources\Educational\OxfordAdvancedDictionary.PNG" />
+    <Content Include="Imageresources\Educational\QuickerMaths.PNG" />
+    <Content Include="Imageresources\Educational\TheSourceBookForTeachingScience.PNG" />
+    <Content Include="Imageresources\Entetainment\101Ragas.PNG" />
+    <Content Include="Imageresources\Entetainment\50PhotoVideoAndAudio.PNG" />
+    <Content Include="Imageresources\Entetainment\BestOldSongs.PNG" />
+    <Content Include="Imageresources\Entetainment\InteractivDrama.PNG" />
+    <Content Include="Imageresources\Entetainment\KeyboardMagicForWriters.PNG" />
+    <Content Include="Imageresources\Entetainment\LearningMagic.PNG" />
+    <Content Include="Imageresources\Entetainment\MoonWalk.PNG" />
+    <Content Include="Imageresources\Entetainment\MouthOrgan.PNG" />
+    <Content Include="Imageresources\Entetainment\PianoForDrummers.PNG" />
+    <Content Include="Imageresources\Entetainment\PlayingTheGuitar.PNG" />
+    <Content Include="Imageresources\Entetainment\TheArtOfFlimmaking.PNG" />
+    <Content Include="Imageresources\Entetainment\YourCreativeWritimg.PNG" />
+    <Content Include="Imageresources\Entetainment\YourVoice.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\1000PlacesToSeeBeforeYouDie.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\BestInTravel2012.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\DrivesOfALifeTime.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\HighwayOnMyPlate.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\India.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\JourneysOfALifeTime.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\OnceInAlifeTimeTrip.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\QuiceReferenceEncyclopedia.PNG" />
+    <Content Include="Imageresources\Festival_Holidays\TheTravelBook.PNG" />
+    <Content Include="Imageresources\Gallery\gallery1.jpg" />
+    <Content Include="Imageresources\Gallery\gallery10.jpg" />
+    <Content Include="Imageresources\Gallery\gallery11.jpg" />
+    <Content Include="Imageresources\Gallery\gallery12.jpg" />
+    <Content Include="Imageresources\Gallery\gallery13.jpg" />
+    <Content Include="Imageresources\Gallery\gallery14.jpg" />
+    <Content Include="Imageresources\Gallery\gallery15.jpg" />
+    <Content Include="Imageresources\Gallery\gallery16.jpg" />
+    <Content Include="Imageresources\Gallery\gallery17.jpg" />
+    <Content Include="Imageresources\Gallery\gallery18.jpg" />
+    <Content Include="Imageresources\Gallery\gallery19.jpg" />
+    <Content Include="Imageresources\Gallery\gallery2.jpg" />
+    <Content Include="Imageresources\Gallery\gallery20.jpg" />
+    <Content Include="Imageresources\Gallery\gallery21.jpg" />
+    <Content Include="Imageresources\Gallery\gallery22.jpg" />
+    <Content Include="Imageresources\Gallery\gallery23.jpg" />
+    <Content Include="Imageresources\Gallery\gallery24.jpg" />
+    <Content Include="Imageresources\Gallery\gallery25.jpg" />
+    <Content Include="Imageresources\Gallery\gallery26.jpg" />
+    <Content Include="Imageresources\Gallery\gallery27.jpg" />
+    <Content Include="Imageresources\Gallery\gallery3.jpg" />
+    <Content Include="Imageresources\Gallery\gallery4.jpg" />
+    <Content Include="Imageresources\Gallery\gallery5.jpg" />
+    <Content Include="Imageresources\Gallery\gallery6.jpg" />
+    <Content Include="Imageresources\Gallery\gallery7.jpg" />
+    <Content Include="Imageresources\Gallery\gallery8.jpg" />
+    <Content Include="Imageresources\Gallery\gallery9.jpg" />
+    <Content Include="Imageresources\Healthpics\AyurvedaforAll.PNG" />
+    <Content Include="Imageresources\Healthpics\AyurvedicAndHerbal.PNG" />
+    <Content Include="Imageresources\Healthpics\CombatingAllergy.PNG" />
+    <Content Include="Imageresources\Healthpics\DentalCareandOralHygiene.PNG" />
+    <Content Include="Imageresources\Healthpics\DietinDiseases.PNG" />
+    <Content Include="Imageresources\Healthpics\HealingHeartDiseaseNaturally.PNG" />
+    <Content Include="Imageresources\Healthpics\Over1000HealthHintsforOneAndAll.PNG" />
+    <Content Include="Imageresources\Healthpics\Spirulina.PNG" />
+    <Content Include="Imageresources\Healthpics\YouareWhatYouEat.PNG" />
+    <Content Include="Imageresources\Healthpics\YourDietafter50.PNG" />
+    <Content Include="Imageresources\Icons\aboutus.JPG" />
+    <Content Include="Imageresources\Icons\adduser.png" />
+    <Content Include="Imageresources\Icons\arrow_cycle.png" />
+    <Content Include="Imageresources\Icons\BOOKHOME.jpg" />
+    <Content Include="Imageresources\Icons\BOOKMAGIC.PNG" />
+    <Content Include="Imageresources\Icons\bookshelf_iphone_icon.png" />
+    <Content Include="Imageresources\Icons\businessman.png" />
+    <Content Include="Imageresources\Icons\chat.png" />
+    <Content Include="Imageresources\Icons\checkmark.png" />
+    <Content Include="Imageresources\Icons\clock.png" />
+    <Content Include="Imageresources\Icons\comment_write.png" />
+    <Content Include="Imageresources\Icons\delivery.png" />
+    <Content Include="Imageresources\Icons\dialog-question.png" />
+    <Content Include="Imageresources\Icons\distributor-report.png" />
+    <Content Include="Imageresources\Icons\document_write.png" />
+    <Content Include="Imageresources\Icons\draw_something.png" />
+    <Content Include="Imageresources\Icons\edituser.png" />
+    <Content Include="Imageresources\Icons\email-2.png" />
+    <Content Include="Imageresources\Icons\gift.png" />
+    <Content Include="Imageresources\Icons\gift_2.png" />
+    <Content Include="Imageresources\Icons\group-2.png" />
+    <Content Include="Imageresources\Icons\home-2.png" />
+    <Content Include="Imageresources\Icons\icon.png" />
+    <Content Include="Imageresources\Icons\image.png" />
+    <Content Include="Imageresources\Icons\inventory-maintenance.png" />
+    <Content Include="Imageresources\Icons\location-pointer.png" />
+    <Content Include="Imageresources\Icons\location.png" />
+    <Content Include="Imageresources\Icons\lock-2.png" />
+    <Content Include="Imageresources\Icons\LOGO.png" />
+    <Content Include="Imageresources\Icons\man.png" />
+    <Content Include="Imageresources\Icons\packing.png" />
+    <Content Include="Imageresources\Icons\parcel.png" />
+    <Content Include="Imageresources\Icons\phone-2.png" />
+    <Content Include="Imageresources\Icons\product-sales-report.png" />
+    <Content Include="Imageresources\Icons\provider.png" />
+    <Content Include="Imageresources\Icons\rate.png" />
+    <Content Include="Imageresources\Icons\refresh.png" />
+    <Content Include="Imageresources\Icons\reload.png" />
+    <Content Include="Imageresources\Icons\reports.png" />
+    <Content Include="Imageresources\Icons\sale.png" />
+    <Content Include="Imageresources\Icons\sales-report-2.png" />
+    <Content Include="Imageresources\Icons\search-2.png" />
+    <Content Include="Imageresources\Icons\shoppingbasket.png" />
+    <Content Include="Imageresources\Icons\shoppingbasket_add.png" />
+    <Content Include="Imageresources\Icons\shopppingcart.png" />
+    <Content Include="Imageresources\Icons\telephone.png" />
+    <Content Include="Imageresources\Icons\thankyou_large.jpg" />
+    <Content Include="Imageresources\Icons\transport.png" />
+    <Content Include="Imageresources\Icons\user.png" />
+    <Content Include="Imageresources\Icons\wallet.png" />
+    <Content Include="Imageresources\Icons\wooman.png" />
+    <Content Include="Imageresources\Menu\document_write.png" />
+    <Content Include="Imageresources\Menu\edituser.png" />
+    <Content Include="Imageresources\Menu\home-2.png" />
+    <Content Include="Imageresources\Menu\image.png" />
+    <Content Include="Imageresources\Menu\lock-2.png" />
+    <Content Include="Imageresources\Menu\search-2.png" />
+    <Content Include="Imageresources\Menu\shopppingcart.png" />
+    <Content Include="Imageresources\open-book.jpg" />
+    <Content Include="Imageresources\Sports_Activities\activitiesOnThe.png" />
+    <Content Include="Imageresources\Sports_Activities\Astronomyforallages.png" />
+    <Content Include="Imageresources\Sports_Activities\BallFour.png" />
+    <Content Include="Imageresources\Sports_Activities\BESTAndWORSTOFGOLF.png" />
+    <Content Include="Imageresources\Sports_Activities\BorntoRun.png" />
+    <Content Include="Imageresources\Sports_Activities\CommunicationactivitiesWithAdults.png" />
+    <Content Include="Imageresources\Sports_Activities\DARKHORSECOVWDVD2lighter.png" />
+    <Content Include="Imageresources\Sports_Activities\FridayNightLights.png" />
+    <Content Include="Imageresources\Sports_Activities\HOMERUN.png" />
+    <Content Include="Imageresources\Sports_Activities\Howtoactivateyourbrain.png" />
+    <Content Include="Imageresources\Sports_Activities\Messi.png" />
+    <Content Include="Imageresources\Sports_Activities\Moneyball.png" />
+    <Content Include="Imageresources\Sports_Activities\NOTTILLTHEFATLADYSINGS.png" />
+    <Content Include="Imageresources\Sports_Activities\SPORTS100.png" />
+    <Content Include="Imageresources\Sports_Activities\TheBlindSide.png" />
+    <Content Include="Imageresources\Sports_Activities\TheBookofBasketall.png" />
+    <Content Include="Imageresources\Thrillers\ADarkerPlace.jpg" />
+    <Content Include="Imageresources\Thrillers\FirstFamily.jpg" />
+    <Content Include="Imageresources\Thrillers\Koala.jpg" />
+    <Content Include="Imageresources\Thrillers\PursuitofHonor.jpg" />
+    <Content Include="Imageresources\Thrillers\RoughJustice.jpg" />
+    <Content Include="Imageresources\Thrillers\TheScarecrow.jpg" />
+    <Content Include="Imageresources\Thrillers\Tulips.jpg" />
+    <Content Include="Imageresources\Thrillers\WickedPrey.jpg" />
+    <Content Include="Scripts\jquery-1.4.3.min.js" />
+    <Content Include="Scripts\jquery.nivo.slider.js" />
+    <Content Include="Scripts\jquery.nivo.slider.pack.js" />
+    <Content Include="Styles\down_arrow.jpg" />
+    <Content Include="Imageresources\Religious\GoddnessGuidenceOracleCard.PNG" />
+    <Content Include="Imageresources\Religious\RiseOfTheSonPrince.PNG" />
+    <Content Include="Imageresources\Religious\SonOfGod.PNG" />
+    <Content Include="Imageresources\shopping-cart.png" />
+    <Content Include="Imageresources\Stars\1star.png" />
+    <Content Include="Imageresources\Stars\2star.png" />
+    <Content Include="Imageresources\Stars\3star.png" />
+    <Content Include="Imageresources\Stars\4star.png" />
+    <Content Include="Imageresources\Stars\5star.png" />
+    <Content Include="MyAccount.aspx" />
+    <Content Include="Privacy.aspx" />
+    <Content Include="ProductDetails.aspx" />
+    <Content Include="ProductList.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="shopping-cart.png" />
+    <Content Include="ShoppingCart.aspx" />
+    <Content Include="SiteMap.aspx" />
+    <Content Include="Styles\nivo-slider.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Home.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\slider.css" />
+    <Content Include="TermsConditions.aspx" />
+    <Content Include="ThankYou.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerDetails.aspx.cs">
+      <DependentUpon>AdminCustomerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerDetails.aspx.designer.cs">
+      <DependentUpon>AdminCustomerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerList.aspx.cs">
+      <DependentUpon>AdminCustomerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerList.aspx.designer.cs">
+      <DependentUpon>AdminCustomerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerOrderDetails.aspx.cs">
+      <DependentUpon>AdminCustomerOrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerOrderDetails.aspx.designer.cs">
+      <DependentUpon>AdminCustomerOrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerOrderList.aspx.cs">
+      <DependentUpon>AdminCustomerOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerOrderList.aspx.designer.cs">
+      <DependentUpon>AdminCustomerOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerReview.aspx.cs">
+      <DependentUpon>AdminCustomerReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCustomerReview.aspx.designer.cs">
+      <DependentUpon>AdminCustomerReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminProcuctDetails.aspx.cs">
+      <DependentUpon>AdminProcuctDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminProcuctDetails.aspx.designer.cs">
+      <DependentUpon>AdminProcuctDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminProductList.aspx.cs">
+      <DependentUpon>AdminProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminProductList.aspx.designer.cs">
+      <DependentUpon>AdminProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdvanceSearch.aspx.cs">
+      <DependentUpon>AdvanceSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvanceSearch.aspx.designer.cs">
+      <DependentUpon>AdvanceSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmOrder.aspx.cs">
+      <DependentUpon>ConfirmOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmOrder.aspx.designer.cs">
+      <DependentUpon>ConfirmOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMap.aspx.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMap.aspx.designer.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsConditions.aspx.cs">
+      <DependentUpon>TermsConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsConditions.aspx.designer.cs">
+      <DependentUpon>TermsConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminSite.Master" />
+    <None Include="Imageresources\Cookerypics\Thumbs.db" />
+    <None Include="Imageresources\Healthpics\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="ima\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1122</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

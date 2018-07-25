@@ -1,0 +1,390 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSite.master.cs" Inherits="BookShopping.Admin.AdminSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head" runat="server">
+    <title></title>
+    <link href="~/Admin/AdminSite.master" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style3
+        {
+            width: 103px;
+            height: 78px;
+        }
+        .style5
+        {
+            width: 881px;
+            height: 78px;
+        }
+        .style6
+        {
+            width: 103px;
+            height: 852px;
+        }
+        .style7
+        {
+            width: 881px;
+            height: 852px;
+        }
+        .style8
+        {
+            height: 852px;
+        }
+        .style15
+        {
+            height: 300px;
+            }
+        .style19
+        {
+            height: 64px;
+        }
+        .style20
+        {
+            height: 78px;
+        }
+        .style25
+        {
+            height: 52px;
+            width: 852px;
+        }       
+        .greenbtn{
+            border: 0px;
+            box-shadow: 0;
+            background: #1ABC9C;
+            border-radius: 5px;
+            color: #FFF;
+            width:500;
+            height:72;
+             font-family: Andalus; 
+            font-size: large;
+        }
+        .graybtn{
+            border: 0px;
+            box-shadow: 0;
+            background:  #808080;
+            border-radius: 5px;
+            color: #FFF;
+            width:500;
+            height:80;
+            font-family: Andalus; 
+            font-size: large;
+        }
+        .bluebtn{
+            border: 0px;
+            box-shadow: 0;
+            background:  #0066CC;
+            border-radius: 5px;
+            color: #FFF;
+            width:500;
+            height:80;
+           font-family: Andalus; 
+            font-size: large;
+        }
+        .redbtn{
+            border-style: none;
+            border-color: inherit;
+            border-width: 0px;
+            box-shadow: 0;
+            background:  #CC0000;
+            border-radius: 5px;
+            color: #FFF;
+            font-family: Andalus; 
+            font-size: large;
+        }
+        .brownbtn{
+            border-style: none;
+            border-color: inherit;
+            border-width: 0px;
+            box-shadow: 0;
+            background:  #990000;
+            border-radius: 5px;
+            color: #FFF;            
+            font-family: Andalus; 
+            font-size: large;
+        }
+        .roundDiv
+        {
+            border: 2px solid #FFF;
+            border-radius: 15px;
+            padding: 10px 40px; 
+            background:  #FFF;                                    
+        }
+        .textfield
+        {
+            border: 2px solid #BDC3C7;
+            border-radius: 6px;
+            padding: 8px 12px; 
+            background:  #FFF;
+            color: #000;
+            font-family: Andalus; 
+            font-size: medium;
+            box-shadow: none;                                   
+        }
+         .textfield:focus
+        {            
+            border-color: #990000;            
+            box-shadow: none;    
+            outline: 0;                               
+        }   
+        .hrCss
+        {
+            height: 4px;
+            color:#990000;
+            background-color:#990000;   
+            border: 0;
+        }   
+        .hrCssWhite
+        {
+            border-style: none;
+            border-color: inherit;
+            border-width: 0;
+            height: 4px;
+            color:#FFF;
+            background-color:#FFF;   
+            width: 720px;
+        }
+       .lblHeader
+        {
+            color:#990000;
+            font-family: Andalus; 
+            font-size: 35px;          
+        }
+        .lblHeaderMedium
+        {
+            color:#990000;
+            background-color:  none;
+            font-family: Andalus; 
+            font-size: 25px;          
+        } 
+         .lblMedium
+        {
+            color:#990000;
+            background-color:  none;
+            font-family: Andalus; 
+            font-size: medium;          
+        } 
+         .lblSmall
+        {
+            color:#990000;
+            background-color:  none;
+            font-family: Andalus; 
+            font-size: small;          
+        } 
+           .dropdownlist
+        {
+            border:2px solid #BDC3C7;
+            border-radius:5px;
+            padding:3px;
+            -webkit-appearance: none; 
+            background-image: url('/Styles/down_arrow.jpg');
+            background-position:180px;
+            background-repeat:no-repeat;
+            text-indent: 0.01px;/*In Firefox*/
+            text-overflow: '';/*In Firefox*/
+            font-family: Andalus; 
+            font-size: medium;
+            height: 40px;
+        }
+        .dropdownlistquestion
+        {
+            border:2px solid #BDC3C7;
+            border-radius:5px;
+            padding:3px;
+            -webkit-appearance: none; 
+            background-image: url('/Styles/down_arrow.jpg');
+            background-position:260px;
+            background-repeat:no-repeat;
+            text-indent: 0.01px;/*In Firefox*/
+            text-overflow: '';/*In Firefox*/
+            font-family: Andalus; 
+            font-size: medium;
+            height: 40px;
+        }
+        .roundImage
+        {
+            border: 0;
+            border-radius: 15px;           
+            background:  #FFF;                                    
+        }
+        .round
+        {
+            border: 0;
+            border-radius: 30px;                                    
+        }    
+        .body {
+        background-image:url('../Imageresources/open-book.jpg');
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+       }   
+        .style27
+        {
+            font-family: Tahoma;
+            font-size: medium;
+            color: #FFFFFF;
+        }
+       
+        .style28
+        {
+            width: 852px;
+        }
+        .style30
+        {
+            width: 787px;
+        }
+        .style31
+        {
+            height: 21px;
+            width: 852px;
+        }
+    </style>
+ </head>
+ <body class ="body">
+   <form id="Form1" runat="server">
+   <div>
+        <table style="width:100%; height: 954px; margin-bottom: 18px;">
+        <tr>
+            <td class="style6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="style7">
+                <table style="width: 100%; height: 738px;">
+                    <tr>
+                        <td class="style30" rowspan="4">
+                             <br />
+                             <asp:Image ID="Image1" runat="server" Height="169px" Width="184px" 
+                                 CssClass="round" 
+                                 ImageUrl="~/Imageresources/Icons/bookshelf_iphone_icon.png" />
+                             </td>
+                        <td class="style31"> 
+                        <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Home.aspx" 
+                                CssClass="lblMedium" ForeColor="White">Switch to User</asp:HyperLink>                               
+                        </div>
+                             
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style28">
+                             <font style="font-family: Andalus; font-size: 70px; font-weight: bold; font-style: normal; font-variant: normal; text-transform: none; color: #FFFFFF">&nbsp;IDEAL BOOK HOME</font></td>
+                    </tr>
+                    <tr>
+                        <td class="style28">
+                         <hr class="hrCssWhite"/>    </td>
+                    </tr>
+                    <tr>
+                        <td class="style28">
+                        <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+                               </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style15" colspan="2" style="height: 20px" >
+                               </td>
+                    </tr>
+                    <tr>
+                        <td class="style15">
+                            <div style="height: 593px; width: 177px;">
+                                <asp:Menu ID="Menu4" runat="server" BackColor="#FFFBD6" 
+                                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                                    ForeColor="#990000" StaticSubMenuIndent="10px" >
+                                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                                    <Items>
+                                        <asp:MenuItem Text="Products" Value="Products" 
+                                            NavigateUrl="~/Admin/AdminProductList.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Customers" Value="Customers" 
+                                            NavigateUrl="~/Admin/AdminCustomerList.aspx">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Customer Orders" Value="Customer Orders" 
+                                            NavigateUrl="~/Admin/AdminCustomerOrderList.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="User Reviews" 
+                                            Value="User Reviews" NavigateUrl="~/Admin/AdminCustomerReview.aspx"></asp:MenuItem>
+                                    </Items>
+                                    <StaticHoverStyle BackColor="#990000" ForeColor="White" Font-Names="Andalus" 
+                                        Font-Size="Medium" />
+                                    <StaticMenuItemStyle Font-Names="Andalus" Font-Size="Large" 
+                                        HorizontalPadding="20px" VerticalPadding="20px" />
+                                    <StaticSelectedStyle BackColor="#FFCC66" Font-Names="Andalus" 
+                                        Font-Size="Medium" />
+                                </asp:Menu>
+                               </td>
+                        <td class="style25">
+                          <div class="main" style="height: 579px; width: 728px;">
+                               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                               </asp:ContentPlaceHolder>                             
+                            </div>
+                             &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style19" colspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div style="width: 913px; height: 42px">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink1" 
+                                    runat="server" Font-Underline="False" 
+                                    ForeColor="White" NavigateUrl= "~/About.aspx" CssClass="style27" 
+                                    Font-Names="Andalus" Font-Size="Medium">About Us</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink2" runat="server" Font-Underline="False" 
+                                    ForeColor="White" NavigateUrl="~/ContactUs.aspx" CssClass="style27" 
+                                    Font-Names="Andalus" Font-Size="Medium">Contact Us</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink3" runat="server" Font-Underline="False" 
+                                    ForeColor="White" NavigateUrl="~/Privacy.aspx" CssClass="style27" 
+                                    Font-Names="Andalus" Font-Size="Medium">Privacy</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink4" runat="server" Font-Underline="False" 
+                                    ForeColor="White" NavigateUrl= "~/TermsConditions.aspx" CssClass="style27" 
+                                    Font-Names="Andalus" Font-Size="Medium">Terms &amp; Conditions</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink5" runat="server" Font-Underline="False" 
+                                    ForeColor="White" NavigateUrl="~/FAQ.aspx" CssClass="style27" 
+                                    Font-Names="Andalus" Font-Size="Medium">FAQ&#39;s / Help</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;              <asp:HyperLink ID="HyperLink6" runat="server" Font-Underline="False" 
+                                    ForeColor="White" NavigateUrl="~/SiteMap.aspx" CssClass="style27" 
+                                    Font-Names="Andalus" Font-Size="Medium">SiteMap</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="style8"> </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                </td>
+            <td class="style5">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" ForeColor="White" 
+                    Text="Developed By Abhay Venkatesh " Font-Bold="False" 
+                    Font-Names="Andalus" style="font-size: medium" Font-Size="Medium"></asp:Label>
+                </td>
+            <td class="style5">
+              </td>
+            <td class="style20">
+                </td>
+        </tr>
+    </table>
+    </div>   
+    
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+    
